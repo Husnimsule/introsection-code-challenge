@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+ background-color: hsl(0, 0%, 98%);
+ font-family: 'outfit';
+ height: 80px;
+ width: 100%;
+}
+nav{
+ min-height: 70px;
+display: flex;
+/* justify-content: space-between; */
+/* align-items: center; */
+padding: 0 50px;
+
+}
+.snap{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: hsl(0, 0%, 8%);
+    font-size: 30px;
+    font-style: bold;
+    line-height: 80px;
+    padding: 0 100px;
+    /* display:inline-flex; */
+     margin: 0px 0px 0px 0px;  
+}
+.login{
+    display:flex;
+    margin: 0px 50px 0px 500px; 
+    gap: 20px;
+}
+nav  ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:30px;
+    padding-top: 30px;
+}  
+.nav-link{
+    transition: 0.7s ease;
+}
+
+a:hover {
+    transition: .5s;
+
+
+}
+
+
+
+/* li ul{
+    display:flex;
+    line-height: 80px;
+    margin: 0 50px;
+
+} */
+li,a{
+    color: hsl(0, 0%, 41%);
+}
+.attribute{
+    display:inline-flex;
+    color:hsl(228, 45%, 44%);
+    font-size: 11px;
+    text-align: center;
+}
+.btn{
+    border: none;
+    padding:2px ;
+    color: hsl(0, 0%, 41%);
+    background-color: transparent;
+
+}
+.btton{
+    background-color:hsl(0, 0%, 98%); 
+    border-radius: 5px;
+    color:  hsl(0, 0%, 41%);
+    width: 50%; 
+    height: 25px;
+    padding:5px ;
+    border: 1px solid  hsl(0, 0%, 41%) ;
+ 
+}   
+
+  /* ================ dropdown part================ */
+  .dropbtn {
+    display: flex;
+    gap: 10px;
+}
+.dropbtn button{
+    color: rgb(122, 118, 118);
+    padding: 0px;  
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    
+}
+.dropdown-content a svg{
+    margin-right: 10px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(217, 215, 238); 
+}
+.down{
+    width: 30px;
+    height: 20px;
+}
+
+
+img{
+   width: 400px; 
+   height:400px;
+   margin: 30px 0px 0px 80px;
+}
+
+.attrib{
+    display:flex;
+    justify-content:center;
+    width: 80%;
+    margin:auto;
+}
+.Make{
+    margin-left:15%;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color:  hsl(0, 0%, 8%);
+    font-style: bold;
+    margin:30px 50px 0px 50px ;
+}
+p{
+     font-Family: [Epilogue];
+     font-weight: 500;
+     font-size: 18px;
+     color: hsl(0, 0%, 41%);
+     margin:20px 50px 0px 50px ;
+}
+.buttn{
+    background-color: hsl(0, 0%, 8%); 
+    border-radius: 10px;
+    padding: 15px;
+    color:  hsl(0, 0%, 98%);
+    font-style: bold;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin:30px 50px 95px 50px ;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width:25px ;
+    height: 3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #262626;
+   
+} 
+
+
+@media (max-width:960px){  
+    .hamburger{
+        display:block;
+        margin-bottom: 30px;
+    }
+    .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+    .hamburger.active .bar:nth-child(1){
+    transform: translateY(8PX) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8PX) rotate(-45deg);
+}
+/* .nav-menu{
+    position:fixed;
+    left:-100%;
+    top:70px;
+    gap:0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+} */
+.login{
+    margin: 0;
+    display: block;
+}
+/* .nav-item{
+    margin: 16px 0;
+}
+.nav-menu.active{
+    left: 0;
+} */
+
+    nav{
+        min-height: 40px;
+       display: flex;
+       justify-content: space-between;
+       /* align-items: center; */
+       padding: 30px 25px;
+       
+       }
+       .links-container ul{
+        display: block;
+        width: 40%;
+        height: 100vh;
+        padding-top: 20px;
+        position:fixed;
+        right:-400px;
+        top:0px;
+        background-color:white;
+        transition: 0.7s ease;
+        /* justify-content:space-between;
+        align-items: center; */
+        gap:10px;
+        box-shadow: hsl(0, 0%, 98%);
+    }  
+    .snap{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color:  hsl(0, 0%, 8%);
+        font-size: 30px;
+        font-style: bold;
+        /* line-height: 80px; */
+        padding: 0;
+        /* display:inline-flex; */
+         margin: 0px 0px 0px 0px;  
+         display: block;
+    }
+    
+    .btn{
+        border: none;
+        padding:2px ;
+        color: hsl(0, 0%, 41%);
+        display: none;
+    
+    }
+    .btton{
+        display: none;
+        background-color:hsl(0, 0%, 98%); 
+        border-radius: 5px;
+        color:  hsl(0, 0%, 41%);
+        width: 50%; 
+        height: 25px;
+        padding:5px ;
+        border: 1px solid  hsl(0, 0%, 41%) ;
+    
+    }
+    
+    .links-container ul li{
+        text-align: justify;
+        gap: 30px;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 7px 5px;
+        margin-left: 10px;
+    }
+    
+    
+       .attrib{
+        flex-direction: column-reverse;
+        /* margin:15px 0px 0px 200px ; */
+    }
+    .Make{
+        margin-left: 0;
+    }
+    
+    img{
+        width: 200px; 
+        height:200px;
+        margin: 15px 0px 0px 40px;
+        /* position:absolute;
+        left: 0px;
+        top: 190px; */
+     }
+     .buttn{
+        background-color: hsl(0, 0%, 8%); 
+        border-radius: 10px;
+        padding: 15px;
+        color:  hsl(0, 0%, 98%);
+        font-style: bold;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        margin:30px 50px 95px 50px ;
+        
+    }
+    
+}
